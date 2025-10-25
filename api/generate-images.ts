@@ -114,22 +114,9 @@ const generateBrainImage = async (baseImageBuffer: Buffer, data: BrainData): Pro
         
         const brainEntries = Object.entries(data) as [keyof BrainData, number][];
 
-        let highestBrainName: keyof BrainData | null = null;
-        let maxPercentage = -1;
-
-        // Find the brain characteristic with the highest percentage
-        for (const [name, percentage] of brainEntries) {
-            if (percentage > maxPercentage) {
-                maxPercentage = percentage;
-                highestBrainName = name;
-            }
-        }
-        
-        const fontName = '"Arial Bold"'; // Use the registered font
-        const normalFontSize = 36;
-        const highestFontSize = 40;
-        const normalColor = '#FFFFFF'; // White
-        const highestColor = '#FFFF00'; // Yellow
+        const fontName = '"Arial Bold"';
+        const fontSize = 36;
+        const color = '#FFFFFF'; // White
 
         const positions: { [key in keyof BrainData]: { x: number; y: number } } = {
             razao:    { x: 93, y: 450 },
@@ -139,9 +126,6 @@ const generateBrainImage = async (baseImageBuffer: Buffer, data: BrainData): Pro
         };
   
         for (const [name, percentage] of brainEntries) {
-            const isHighest = name === highestBrainName;
-            const fontSize = isHighest ? highestFontSize : normalFontSize;
-            const color = isHighest ? highestColor : normalColor;
             const font = `${fontSize}px ${fontName}`;
             const text = `${percentage}%`;
             const { x, y } = positions[name];

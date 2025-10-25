@@ -1,0 +1,5 @@
+{
+  "name": "Fase final Gerador de Imagens API 2",
+  "description": "Uma API backend para gerar imagens dinamicamente com base em dados de entrada JSON. Projetado para ser chamado por serviços como N8N.",
+  "requestFramePermissions": []
+}

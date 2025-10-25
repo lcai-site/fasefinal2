@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Generation API</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background-color: #0a0a0a; color: #eaeaea; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+    .container { text-align: center; padding: 2rem; border: 1px solid #333; border-radius: 8px; background-color: #111; }
+    h1 { color: #00c7b0; }
+    code { background-color: #222; padding: 0.2rem 0.5rem; border-radius: 4px; font-family: monospace; }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "canvas": "https://aistudiocdn.com/canvas@^3.2.0",
+    "@vercel/node": "https://aistudiocdn.com/@vercel/node@^5.4.0",
+    "path": "https://aistudiocdn.com/path@^0.12.7",
+    "process": "https://aistudiocdn.com/process@^0.11.10",
+    "buffer": "https://aistudiocdn.com/buffer@^6.0.3",
+    "fs": "https://aistudiocdn.com/fs@^0.0.1-security"
+  }
+}
+</script>
+</head>
+<body>
+  <div class="container">
+    <h1>Image Generation API</h1>
+    <p>This is a backend service.</p>
+    <p>Make a <code>POST</code> request to <code>/api/generate-images</code> to create images.</p>
+  </div>
+</body>
+</html>

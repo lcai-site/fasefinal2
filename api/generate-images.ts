@@ -80,9 +80,9 @@ const generateAnimalImage = async (baseImageBuffer: Buffer, data: AnimalData): P
 
         const positions: { [key in keyof AnimalData]: { x: number; y: number } } = {
           lobo:    { x: 85, y: 280 },
-          aguia:   { x: 500, y: 280 },
+          aguia:   { x: 350, y: 280 },
           tubarao: { x: 85, y: 635 },
-          gato:    { x: 500, y: 635 },
+          gato:    { x: 350, y: 635 },
         };
 
         for (const [name, percentage] of animalEntries) {

@@ -133,8 +133,8 @@ const generateBrainImage = async (baseImageBuffer: Buffer, data: BrainData): Pro
 
         const positions: { [key in keyof BrainData]: { x: number; y: number } } = {
             razao:    { x: 95, y: 450 },
-            emocao:   { x: 490, y: 450 },
-            pensante: { x: 315, y: 250 },
+            emocao:   { x: 525, y: 450 },
+            pensante: { x: 300, y: 250 },
             atuante:  { x: 315, y: 780 },
         };
   

@@ -132,9 +132,9 @@ const generateBrainImage = async (baseImageBuffer: Buffer, data: BrainData): Pro
         const highestColor = '#FFFF00'; // Yellow
 
         const positions: { [key in keyof BrainData]: { x: number; y: number } } = {
-            razao:    { x: 95, y: 450 },
-            emocao:   { x: 525, y: 450 },
-            pensante: { x: 300, y: 250 },
+            razao:    { x: 93, y: 450 },
+            emocao:   { x: 540, y: 450 },
+            pensante: { x: 315, y: 215 },
             atuante:  { x: 315, y: 780 },
         };
   

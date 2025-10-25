@@ -79,10 +79,10 @@ const generateAnimalImage = async (baseImageBuffer: Buffer, data: AnimalData): P
         const highestColor = '#FFFF00'; // Yellow
 
         const positions: { [key in keyof AnimalData]: { x: number; y: number } } = {
-          lobo:    { x: 35, y: 133 },
-          aguia:   { x: 183, y: 133 },
-          tubarao: { x: 35, y: 305 },
-          gato:    { x: 183, y: 305 },
+          lobo:    { x: 95, y: 365 },
+          aguia:   { x: 498, y: 365 },
+          tubarao: { x: 95, y: 650 },
+          gato:    { x: 498, y: 650 },
         };
 
         for (const [name, percentage] of animalEntries) {
@@ -132,10 +132,10 @@ const generateBrainImage = async (baseImageBuffer: Buffer, data: BrainData): Pro
         const highestColor = '#FFFF00'; // Yellow
 
         const positions: { [key in keyof BrainData]: { x: number; y: number } } = {
-            razao:    { x: 44, y: 225 },
-            emocao:   { x: 265, y: 225 },
-            pensante: { x: 155, y: 113 },
-            atuante:  { x: 155, y: 380 },
+            razao:    { x: 118, y: 708 },
+            emocao:   { x: 737, y: 708 },
+            pensante: { x: 423, y: 486 },
+            atuante:  { x: 423, y: 1315 },
         };
   
         for (const [name, percentage] of brainEntries) {

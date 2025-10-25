@@ -79,10 +79,10 @@ const generateAnimalImage = async (baseImageBuffer: Buffer, data: AnimalData): P
         const highestColor = '#FFFF00'; // Yellow
 
         const positions: { [key in keyof AnimalData]: { x: number; y: number } } = {
-          lobo:    { x: 95, y: 365 },
-          aguia:   { x: 498, y: 365 },
-          tubarao: { x: 95, y: 650 },
-          gato:    { x: 498, y: 650 },
+          lobo:    { x: 90, y: 300 },
+          aguia:   { x: 498, y: 300 },
+          tubarao: { x: 90, y: 630 },
+          gato:    { x: 498, y: 630 },
         };
 
         for (const [name, percentage] of animalEntries) {
